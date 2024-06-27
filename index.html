@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabScore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dados do Aluno</h1>
+    </header>
+    <section class="container">
+        <div class="info-aluno">
+            <h2>Informações do Aluno</h2>
+            <p><strong>Nome:</strong> <span id="nomeAluno">João da Silva</span></p>
+            <p><strong>Idade:</strong> <span id="idadeAluno">16 anos</span></p>
+            <p><strong>Série:</strong> <span id="serieAluno">2º ano do Ensino Médio</span></p>
+            <p><strong>Escola:</strong> <span id="nomeEscola">Escola Estadual Professor José</span></p>
+            <p><strong>Matéria Favorita:</strong> <span id="materiaFavorita">Matemática</span></p>
+        </div>
+
+        <div class="notas">
+            <div class="notas-add-linha">
+                <h2>Notas das Matérias</h2>
+                <button class="add-linha" id="add-linha">Adicionar Linha</button>
+            </div>
+            <table id="tabela-notas">
+                <thead>
+                    <tr>
+                        <th>Matéria</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota 4</th>
+                        <th>Média</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <tr id="placeholder-row">
+                            <td colspan="6">Nenhuma matéria adicionada ainda</td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="media">
+            <h2>Média Geral do Aluno</h2>
+            <p id="media-geral">A média geral do aluno é 0.0</p>
+            <p class="mensagme" id="mensagem"></p>
+        </div>
+
+        <div class="maior-media">
+            <h2>Maior Média entre as Matérias</h2>
+            <p id="maior-media">A maior média entre as matérias é 0.0</p>
+        </div>
+
+        <div class="lista-alunos">
+            <h2>Lista de Alunos</h2>
+            <ul>
+                <li>João da Silva</li>
+                <li>Maria Oliveira</li>
+                <li>José Santos</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>Elaborado por Suene Souza</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
